@@ -333,6 +333,12 @@ document.getElementById('boekform').addEventListener('submit', e => {
 });
 
 document.getElementById('jr').textContent = new Date().getFullYear();
+
+// na de intro-animatie de reveal-klassen opruimen, zodat de geladen webfont
+// gegarandeerd hertekend wordt (composited layers blijven anders soms hangen)
+addEventListener('load', () => setTimeout(() => {
+  document.querySelectorAll('.reveal').forEach(el => el.classList.remove('reveal','d1','d2','d3','d4'));
+}, 1700));
 </script>
 </body>
 </html>
