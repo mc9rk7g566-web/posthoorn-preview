@@ -11,16 +11,16 @@
 }
 /* ============================================================
    CAMPING DE POSTHOORN · concept-preview · gedeelde stylesheet
-   huisstijl: paars #6E2B54 · lime #D8A24A · groen #4C8A5A
-   typografie: Nunito (koppen) + Lato (tekst) | palet gemoderniseerd 2026-06-12
+   huisstijl: paars #BD5A3C · lime #D8A24A · groen #4C8A5A
+   typografie: Nunito (koppen) + Lato (tekst) | palet 2026: diepgroen + terracotta + zandgoud
    ============================================================ */
 :root{
   --bos:#15362A;          /* diep bosgroen — ink */
   --bos-d:#0F271D;
   --groen:#4C8A5A;        /* huisstijl-groen */
   --lime:#D8A24A;         /* huisstijl-lime — marker/accent */
-  --paars:#6E2B54;        /* huisstijl-paars — dé boekkleur */
-  --paars-d:#532040;
+  --klei:#BD5A3C;        /* terracotta/klei — dé actiekleur */
+  --klei-d:#9B4329;
   --creme:#F8F5EE;        /* warme basis */
   --zand:#EEE8DB;
   --wit:#FFFFFF;
@@ -70,20 +70,20 @@ nav.main a::after{content:"";position:absolute;left:0;right:100%;bottom:-5px;hei
 nav.main a:hover::after,nav.main a.actief::after{right:0}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  background:var(--paars);color:#fff;text-decoration:none;font-weight:700;
+  background:var(--klei);color:#fff;text-decoration:none;font-weight:700;
   padding:.78rem 1.5rem;border-radius:999px;border:none;cursor:pointer;
   font-size:.95rem;letter-spacing:.02em;font-family:'Lato',sans-serif;
-  box-shadow:0 14px 30px -12px rgba(110,43,84,.55);
+  box-shadow:0 14px 30px -12px rgba(189,90,60,.55);
   transition:transform .25s var(--ease),box-shadow .25s,background .25s;
 }
-.btn:hover{transform:translateY(-2px);background:var(--paars-d);box-shadow:0 20px 38px -12px rgba(110,43,84,.6)}
+.btn:hover{transform:translateY(-2px);background:var(--klei-d);box-shadow:0 20px 38px -12px rgba(189,90,60,.6)}
 .btn.klein{padding:.6rem 1.2rem;font-size:.88rem;margin-left:6px}
-.btn.licht{background:#fff;color:var(--paars);box-shadow:0 14px 30px -14px rgba(0,0,0,.4)}
+.btn.licht{background:#fff;color:var(--klei);box-shadow:0 14px 30px -14px rgba(0,0,0,.4)}
 .btn.licht:hover{background:var(--creme)}
 .btn.ghost{background:transparent;border:2px solid rgba(255,255,255,.55);box-shadow:none}
 .btn.ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
-.btn.rand{background:transparent;color:var(--paars);border:2px solid var(--paars);box-shadow:none}
-.btn.rand:hover{background:var(--paars);color:#fff}
+.btn.rand{background:transparent;color:var(--klei);border:2px solid var(--klei);box-shadow:none}
+.btn.rand:hover{background:var(--klei);color:#fff}
 @media(max-width:880px){nav.main{display:none}}
 
 /* ---------- hero (homepage) ---------- */
@@ -103,7 +103,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 .hero h1 .mark{position:relative;white-space:nowrap}
 .hero h1 .mark::after{
   content:"";position:absolute;left:-2%;right:-2%;bottom:.04em;height:.26em;z-index:-1;
-  background:var(--paars);opacity:.85;border-radius:3px;transform:skewY(-1.2deg);
+  background:var(--klei);opacity:.85;border-radius:3px;transform:skewY(-1.2deg);
 }
 .hero .sub{margin:20px 0 26px;font-size:clamp(1.02rem,1.6vw,1.22rem);max-width:54ch;color:rgba(255,255,255,.93);text-shadow:0 2px 14px rgba(0,0,0,.3)}
 .hero .acties{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
@@ -156,7 +156,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 
 /* ---------- sectiekoppen ---------- */
 .kop{margin-bottom:42px}
-.kop .eyebrow{color:var(--paars)}
+.kop .eyebrow{color:var(--klei)}
 .kop h2{font-size:clamp(1.7rem,3.2vw,2.5rem);max-width:24ch;text-wrap:balance}
 .kop p{margin-top:12px;color:var(--muted);max-width:60ch;font-size:1.05rem}
 .scrl{opacity:0;transform:translateY(34px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
@@ -178,7 +178,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
   position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.96);color:var(--bos);
   border-radius:999px;padding:.36rem .85rem;font-size:.83rem;font-weight:700;box-shadow:0 8px 20px -8px rgba(0,0,0,.35);
 }
-.prijs-badge b{color:var(--paars);font-size:.98rem}
+.prijs-badge b{color:var(--klei);font-size:.98rem}
 .nieuw-badge{
   position:absolute;top:14px;left:14px;background:var(--lime);color:var(--bos);
   font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
@@ -190,7 +190,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:2px}
 .chip{font-size:.76rem;font-weight:700;background:var(--zand);border:1px solid var(--line);border-radius:999px;padding:.22rem .65rem;color:var(--bos)}
 .kaart .cta{
-  margin-top:auto;padding-top:12px;font-weight:800;color:var(--paars);font-size:.94rem;
+  margin-top:auto;padding-top:12px;font-weight:800;color:var(--klei);font-size:.94rem;
   display:inline-flex;align-items:center;gap:7px;
 }
 .kaart .cta span{transition:transform .25s var(--ease)}
@@ -276,7 +276,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 .occ:hover{background:rgba(255,255,255,.55)}
 .occ b{font-weight:700}
 .occ span{color:var(--muted);font-size:.84rem;flex:1;margin-left:6px}
-.occ .p{font-family:'Posthoorn Kop','Nunito',sans-serif;font-weight:800;color:var(--paars);font-size:1.02rem;white-space:nowrap}
+.occ .p{font-family:'Posthoorn Kop','Nunito',sans-serif;font-weight:800;color:var(--klei);font-size:1.02rem;white-space:nowrap}
 @media(max-width:880px){.tekoop .grid2{grid-template-columns:1fr;gap:40px}.tekoop .fotos{min-height:320px}}
 
 /* ---------- te koop: aanbodpagina ---------- */
@@ -296,8 +296,8 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 .aanbod-kaart .plek{font-size:.85rem;font-weight:700;color:var(--groen)}
 .aanbod-kaart p{font-size:.93rem;color:var(--muted)}
 .aanbod-kaart .onder{margin-top:auto;padding-top:14px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line)}
-.aanbod-kaart .prijs{font-family:'Posthoorn Kop','Nunito',sans-serif;font-weight:800;font-size:1.35rem;color:var(--paars)}
-.aanbod-kaart .cta{font-weight:800;color:var(--paars);font-size:.92rem;display:inline-flex;align-items:center;gap:7px}
+.aanbod-kaart .prijs{font-family:'Posthoorn Kop','Nunito',sans-serif;font-weight:800;font-size:1.35rem;color:var(--klei)}
+.aanbod-kaart .cta{font-weight:800;color:var(--klei);font-size:.92rem;display:inline-flex;align-items:center;gap:7px}
 .aanbod-kaart .cta span{transition:transform .25s var(--ease)}
 .aanbod-kaart:hover .cta span{transform:translateX(5px)}
 .status-badge{
@@ -311,7 +311,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 .koopinfo{padding:64px 0 96px}
 .stappen{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:8px}
 .stap{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
-.stap .nr{width:38px;height:38px;border-radius:50%;background:var(--paars);color:#fff;display:grid;place-items:center;font-family:'Posthoorn Kop','Nunito',sans-serif;font-weight:800;margin-bottom:14px}
+.stap .nr{width:38px;height:38px;border-radius:50%;background:var(--klei);color:#fff;display:grid;place-items:center;font-family:'Posthoorn Kop','Nunito',sans-serif;font-weight:800;margin-bottom:14px}
 .stap b{display:block;font-size:1.02rem;margin-bottom:6px}
 .stap p{font-size:.9rem;color:var(--muted)}
 @media(max-width:880px){.stappen{grid-template-columns:1fr}}
@@ -329,7 +329,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 .beheer-form .kop-f svg{width:17px;height:17px;color:var(--groen)}
 .beheer-form .veldje{background:var(--creme);border:1.5px solid var(--line);border-radius:10px;padding:.5rem .75rem;font-size:.85rem;color:var(--muted);margin-bottom:9px;display:flex;justify-content:space-between;gap:10px}
 .beheer-form .veldje b{color:var(--bos);font-weight:700}
-.beheer-form .nep-knop{background:var(--paars);color:#fff;text-align:center;border-radius:10px;padding:.6rem;font-weight:700;font-size:.88rem;margin-top:4px}
+.beheer-form .nep-knop{background:var(--klei);color:#fff;text-align:center;border-radius:10px;padding:.6rem;font-weight:700;font-size:.88rem;margin-top:4px}
 @media(max-width:880px){.beheer-blok{grid-template-columns:1fr;padding:30px}}
 
 /* ---------- chalet-detailpagina ---------- */
@@ -339,7 +339,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 .galerij .groot img{width:100%;height:100%;object-fit:cover}
 .galerij .thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
 .galerij .thumbs button{border:2.5px solid transparent;border-radius:12px;overflow:hidden;cursor:pointer;padding:0;background:none;aspect-ratio:4/3}
-.galerij .thumbs button.actief{border-color:var(--paars)}
+.galerij .thumbs button.actief{border-color:var(--klei)}
 .galerij .thumbs img{width:100%;height:100%;object-fit:cover}
 .koop-kaart{
   position:sticky;top:96px;background:#fff;border:1px solid var(--line);border-radius:var(--r);
@@ -347,7 +347,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 }
 .koop-kaart .plek{font-size:.85rem;font-weight:700;color:var(--groen)}
 .koop-kaart h1{font-size:1.7rem;margin:4px 0 10px}
-.koop-kaart .prijs{font-family:'Posthoorn Kop','Nunito',sans-serif;font-weight:800;font-size:2rem;color:var(--paars)}
+.koop-kaart .prijs{font-family:'Posthoorn Kop','Nunito',sans-serif;font-weight:800;font-size:2rem;color:var(--klei)}
 .koop-kaart .prijs small{font-size:.8rem;color:var(--muted);font-family:'Lato',sans-serif;font-weight:400}
 .koop-kaart .acties{display:grid;gap:10px;margin:20px 0 14px}
 .koop-kaart .noot{font-size:.82rem;color:var(--muted)}
@@ -362,7 +362,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 .kenmerken li{list-style:none;display:flex;gap:9px;align-items:flex-start;font-size:.92rem}
 .kenmerken svg{width:16px;height:16px;flex:none;margin-top:4px;color:var(--groen)}
 .terug{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.9rem;color:var(--muted);text-decoration:none;margin-bottom:18px}
-.terug:hover{color:var(--paars)}
+.terug:hover{color:var(--klei)}
 .ook-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .ook{padding:72px 0 96px}
 @media(max-width:980px){.detail-grid{grid-template-columns:1fr}.koop-kaart{position:static}.ook-grid{grid-template-columns:1fr}.kenmerken{grid-template-columns:1fr}}
@@ -376,12 +376,12 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
   padding:1.05rem 1.3rem;font-weight:700;font-size:.99rem;
 }
 .faq summary::-webkit-details-marker{display:none}
-.faq summary .plus{flex:none;width:26px;height:26px;border-radius:50%;background:var(--zand);display:grid;place-items:center;color:var(--paars);font-weight:800;transition:transform .3s var(--ease),background .3s}
+.faq summary .plus{flex:none;width:26px;height:26px;border-radius:50%;background:var(--zand);display:grid;place-items:center;color:var(--klei);font-weight:800;transition:transform .3s var(--ease),background .3s}
 .faq details[open] .plus{transform:rotate(45deg);background:var(--lime)}
 .faq .antw{padding:0 1.3rem 1.15rem;color:var(--muted);font-size:.94rem;max-width:64ch}
 
 /* ---------- contact / afsluiter ---------- */
-.afsluiter{background:linear-gradient(135deg,var(--paars) 0%,#8A3A6A 60%,var(--paars-d) 100%);color:#fff;padding:104px 0;overflow:hidden;position:relative}
+.afsluiter{background:linear-gradient(140deg,var(--bos) 0%,#1E4A38 58%,var(--bos-d) 100%);color:#fff;padding:104px 0;overflow:hidden;position:relative}
 .afsluiter::before{
   content:"";position:absolute;width:560px;height:560px;border-radius:50%;
   background:radial-gradient(circle,rgba(216,162,74,.22),transparent 65%);top:-220px;right:-140px;
