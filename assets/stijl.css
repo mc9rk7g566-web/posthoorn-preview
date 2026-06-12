@@ -11,23 +11,23 @@
 }
 /* ============================================================
    CAMPING DE POSTHOORN · concept-preview · gedeelde stylesheet
-   huisstijl: paars #7C0062 · lime #D6DE23 · groen #509A40
-   typografie: Nunito (koppen) + Lato (tekst, huidige huisstijl)
+   huisstijl: paars #6E2B54 · lime #D8A24A · groen #4C8A5A
+   typografie: Nunito (koppen) + Lato (tekst) | palet gemoderniseerd 2026-06-12
    ============================================================ */
 :root{
-  --bos:#21392A;          /* diep bosgroen — ink */
-  --bos-d:#16281D;
-  --groen:#509A40;        /* huisstijl-groen */
-  --lime:#D6DE23;         /* huisstijl-lime — marker/accent */
-  --paars:#7C0062;        /* huisstijl-paars — dé boekkleur */
-  --paars-d:#5C0049;
-  --creme:#FAF6EC;        /* warme basis */
-  --zand:#F0EADA;
+  --bos:#15362A;          /* diep bosgroen — ink */
+  --bos-d:#0F271D;
+  --groen:#4C8A5A;        /* huisstijl-groen */
+  --lime:#D8A24A;         /* huisstijl-lime — marker/accent */
+  --paars:#6E2B54;        /* huisstijl-paars — dé boekkleur */
+  --paars-d:#532040;
+  --creme:#F8F5EE;        /* warme basis */
+  --zand:#EEE8DB;
   --wit:#FFFFFF;
-  --muted:#5E6B5E;
-  --line:#E3DCC8;
+  --muted:#5C6862;
+  --line:#E2DBCC;
   --r:18px;
-  --shadow:0 24px 60px -28px rgba(22,40,29,.35);
+  --shadow:0 24px 60px -28px rgba(15,39,29,.35);
   --ease:cubic-bezier(.22,.75,.25,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -48,7 +48,7 @@ section{position:relative}
   background:var(--bos-d);color:rgba(255,255,255,.75);font-size:.78rem;
   letter-spacing:.04em;padding:.5rem 1rem;
 }
-.preview-bar .dot{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(214,222,35,.18);flex:none}
+.preview-bar .dot{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(216,162,74,.18);flex:none}
 .preview-bar strong{color:#fff;font-weight:700}
 .preview-bar .maker{color:var(--lime)}
 @media(max-width:560px){.preview-bar .hide-sm{display:none}}
@@ -58,7 +58,7 @@ header.site{
   position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:28px;
   padding:14px 26px;transition:background .35s,box-shadow .35s,padding .35s;
 }
-header.site.solid{background:rgba(250,246,236,.94);backdrop-filter:blur(10px);box-shadow:0 10px 30px -18px rgba(22,40,29,.35);padding:9px 26px}
+header.site.solid{background:rgba(248,245,238,.94);backdrop-filter:blur(10px);box-shadow:0 10px 30px -18px rgba(15,39,29,.35);padding:9px 26px}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none;flex:none}
 .brand img{width:44px;height:44px;object-fit:contain;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
 .brand b{font-family:'Posthoorn Kop','Nunito',sans-serif;font-weight:800;font-size:1.15rem;letter-spacing:0;color:#fff;transition:color .35s}
@@ -73,10 +73,10 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
   background:var(--paars);color:#fff;text-decoration:none;font-weight:700;
   padding:.78rem 1.5rem;border-radius:999px;border:none;cursor:pointer;
   font-size:.95rem;letter-spacing:.02em;font-family:'Lato',sans-serif;
-  box-shadow:0 14px 30px -12px rgba(124,0,98,.55);
+  box-shadow:0 14px 30px -12px rgba(110,43,84,.55);
   transition:transform .25s var(--ease),box-shadow .25s,background .25s;
 }
-.btn:hover{transform:translateY(-2px);background:var(--paars-d);box-shadow:0 20px 38px -12px rgba(124,0,98,.6)}
+.btn:hover{transform:translateY(-2px);background:var(--paars-d);box-shadow:0 20px 38px -12px rgba(110,43,84,.6)}
 .btn.klein{padding:.6rem 1.2rem;font-size:.88rem;margin-left:6px}
 .btn.licht{background:#fff;color:var(--paars);box-shadow:0 14px 30px -14px rgba(0,0,0,.4)}
 .btn.licht:hover{background:var(--creme)}
@@ -92,7 +92,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 .hero .bg img{width:100%;height:100%;object-fit:cover;animation:heroZoom 14s var(--ease) forwards}
 @keyframes heroZoom{from{transform:scale(1.09)}to{transform:scale(1)}}
 .hero .bg::after{content:"";position:absolute;inset:0;background:
-  linear-gradient(180deg,rgba(22,40,29,.55) 0%,rgba(22,40,29,.08) 34%,rgba(22,40,29,.14) 60%,rgba(22,40,29,.78) 100%)}
+  linear-gradient(180deg,rgba(15,39,29,.55) 0%,rgba(15,39,29,.08) 34%,rgba(15,39,29,.14) 60%,rgba(15,39,29,.78) 100%)}
 .hero-inner{padding:170px 24px 56px;max-width:1180px;margin:0 auto;width:100%}
 .eyebrow{
   display:inline-flex;align-items:center;gap:10px;font-size:.82rem;font-weight:700;
@@ -119,7 +119,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 /* ---------- pagina-hero (subpagina's) ---------- */
 .pagina-hero{position:relative;color:#fff;padding:88px 0 64px;overflow:hidden;margin-top:calc(-1 * (62px + 33px))}
 .pagina-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.pagina-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,40,29,.72),rgba(22,40,29,.55))}
+.pagina-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,39,29,.72),rgba(15,39,29,.55))}
 .pagina-hero .wrap{position:relative;z-index:2;padding-top:80px}
 .pagina-hero h1{font-size:clamp(2rem,4.4vw,3.2rem);max-width:20ch}
 .pagina-hero p{margin-top:12px;max-width:56ch;color:rgba(255,255,255,.9)}
@@ -136,7 +136,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 .boekkaart>div{min-width:0}
 .boekkaart label{display:block;font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 6px 4px}
 .boekkaart .veld{background:var(--creme);border:1.5px solid var(--line);border-radius:14px;padding:.72rem .9rem;width:100%;min-width:0;font:inherit;color:var(--bos);transition:border-color .2s;-webkit-appearance:none;appearance:none}
-.boekkaart select.veld{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2321392A' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .9rem center}
+.boekkaart select.veld{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2315362A' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .9rem center}
 .boekkaart .veld:focus{outline:none;border-color:var(--groen)}
 .boekkaart .btn{padding:.95rem 1.9rem;font-size:1rem;white-space:nowrap}
 .boek-zone{padding:0 24px}
@@ -147,7 +147,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 .usps{background:var(--zand);padding:118px 0 46px;border-bottom:1px solid var(--line)}
 .usps .rij{display:grid;grid-template-columns:repeat(5,1fr);gap:22px}
 .usp{display:flex;gap:13px;align-items:flex-start;font-size:.92rem;line-height:1.45}
-.usp .ico{flex:none;width:44px;height:44px;border-radius:13px;background:var(--lime);display:grid;place-items:center;color:var(--bos);box-shadow:0 8px 18px -10px rgba(33,57,42,.4);transform:rotate(-3deg)}
+.usp .ico{flex:none;width:44px;height:44px;border-radius:13px;background:var(--lime);display:grid;place-items:center;color:var(--bos);box-shadow:0 8px 18px -10px rgba(21,54,42,.4);transform:rotate(-3deg)}
 .usp:nth-child(2n) .ico{transform:rotate(2.5deg)}
 .usp .ico svg{width:22px;height:22px}
 .usp b{display:block;font-size:.95rem}
@@ -208,7 +208,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 .tegel.foto-t:hover img{transform:scale(1.05)}
 .tegel.foto-t .overlay{
   position:absolute;inset:auto 0 0 0;padding:46px 22px 18px;color:#fff;
-  background:linear-gradient(180deg,transparent,rgba(22,40,29,.82));
+  background:linear-gradient(180deg,transparent,rgba(15,39,29,.82));
 }
 .tegel.foto-t .overlay b{font-family:'Posthoorn Kop','Nunito',sans-serif;font-weight:800;font-size:1.18rem;display:block}
 .tegel.foto-t .overlay span{font-size:.86rem;color:rgba(255,255,255,.85)}
@@ -237,7 +237,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 .omgeving{padding:0;color:#fff}
 .omgeving .band{position:relative;min-height:620px;display:flex;align-items:center;overflow:hidden}
 .omgeving .band>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.omgeving .band::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,40,29,.82) 0%,rgba(22,40,29,.45) 52%,rgba(22,40,29,.1) 100%)}
+.omgeving .band::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,39,29,.82) 0%,rgba(15,39,29,.45) 52%,rgba(15,39,29,.1) 100%)}
 .omgeving .inhoud{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:90px 24px;width:100%}
 .omgeving h2{font-size:clamp(1.7rem,3vw,2.4rem);max-width:20ch}
 .omgeving p{margin:16px 0 22px;max-width:52ch;color:rgba(255,255,255,.9)}
@@ -268,7 +268,7 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 .tekoop{background:var(--zand);padding:96px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .tekoop .grid2{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
 .tekoop .fotos{position:relative;min-height:380px}
-.tekoop .fotos img{position:absolute;width:74%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:18px;border:6px solid #fff;box-shadow:0 30px 60px -30px rgba(22,40,29,.45)}
+.tekoop .fotos img{position:absolute;width:74%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:18px;border:6px solid #fff;box-shadow:0 30px 60px -30px rgba(15,39,29,.45)}
 .tekoop .fotos img:first-child{top:0;left:0;transform:rotate(-3deg)}
 .tekoop .fotos img:last-child{bottom:0;right:0;transform:rotate(2.4deg)}
 .occasions{margin:22px 0;border-top:1px solid var(--line)}
@@ -381,10 +381,10 @@ nav.main a:hover::after,nav.main a.actief::after{right:0}
 .faq .antw{padding:0 1.3rem 1.15rem;color:var(--muted);font-size:.94rem;max-width:64ch}
 
 /* ---------- contact / afsluiter ---------- */
-.afsluiter{background:linear-gradient(135deg,var(--paars) 0%,#9A0B7C 60%,var(--paars-d) 100%);color:#fff;padding:104px 0;overflow:hidden;position:relative}
+.afsluiter{background:linear-gradient(135deg,var(--paars) 0%,#8A3A6A 60%,var(--paars-d) 100%);color:#fff;padding:104px 0;overflow:hidden;position:relative}
 .afsluiter::before{
   content:"";position:absolute;width:560px;height:560px;border-radius:50%;
-  background:radial-gradient(circle,rgba(214,222,35,.22),transparent 65%);top:-220px;right:-140px;
+  background:radial-gradient(circle,rgba(216,162,74,.22),transparent 65%);top:-220px;right:-140px;
 }
 .afsluiter .grid2{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center;position:relative}
 .afsluiter h2{font-size:clamp(1.9rem,3.6vw,2.8rem);max-width:16ch}
@@ -411,10 +411,44 @@ footer.site .maker{color:var(--lime)}
 .mob-balk{
   position:fixed;left:0;right:0;bottom:0;z-index:55;display:none;gap:10px;
   padding:10px 14px calc(10px + env(safe-area-inset-bottom));
-  background:rgba(250,246,236,.96);backdrop-filter:blur(10px);box-shadow:0 -10px 30px -16px rgba(22,40,29,.4);
+  background:rgba(248,245,238,.96);backdrop-filter:blur(10px);box-shadow:0 -10px 30px -16px rgba(15,39,29,.4);
 }
 .mob-balk .btn{flex:1;padding:.85rem 1rem;font-size:.93rem}
 .mob-balk .btn.tel{background:#fff;color:var(--bos);border:1.5px solid var(--line);box-shadow:none;flex:0 0 auto}
 @media(max-width:880px){.mob-balk{display:flex}}
 
 ::selection{background:var(--lime);color:var(--bos)}
+
+/* ---------- mobiele finishing (2026-06-12) ---------- */
+@media(max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 18px}
+  .hero-inner{padding:138px 18px 42px}
+  .hero h1{font-size:clamp(2.05rem,8.4vw,3rem);max-width:18ch}
+  .hero .sub{font-size:1.04rem}
+  .usps{padding:92px 0 34px}
+  .usps .rij{gap:18px 14px}
+  .verblijf{padding:64px 0 16px}
+  .voorz,.reviews,.gasterij{padding:64px 0}
+  .tekoop,.koopinfo{padding:64px 0}
+  .faq{padding:60px 0}
+  .afsluiter{padding:72px 0}
+  .kop{margin-bottom:28px}
+  .gasterij .grid2{gap:26px}
+  .omgeving .band{min-height:540px}
+  .omgeving .inhoud{padding:60px 18px}
+  .pagina-hero{padding:64px 0 44px}
+  .pagina-hero .wrap{padding-top:56px}
+  .aanbod{padding:56px 0 30px}
+  .detail{padding:28px 0 16px}
+  .ook{padding:52px 0 72px}
+  .galerij .thumbs{gap:8px}
+  .koop-kaart{padding:22px}
+  .beheer-blok{padding:24px}
+  footer.site{padding:34px 0 96px}
+  footer.site .rij{flex-direction:column;align-items:flex-start;gap:10px;text-align:left}
+}
+@media(max-width:380px){
+  .hero h1{font-size:1.9rem}
+  .boekkaart{grid-template-columns:1fr}
+}
