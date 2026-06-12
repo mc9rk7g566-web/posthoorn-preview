@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Camping de Posthoorn — Camping voor iedereen, aan de Rucphense bossen</title>
+<meta name="description" content="Kamperen aan de rand van de Rucphense bossen. Royale plaatsen, camping-suites, hutten en chalets, gratis verwarmd zwembad. Bekijk beschikbaarheid en boek direct online.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preload" as="image" href="assets/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/stijl.css">
+</head>
+<body>
+
+<!-- preview-banner -->
+<div class="preview-bar"><span class="dot"></span><span><strong>Concept-preview</strong> <span class="hide-sm">· gemaakt door</span> <span class="maker">Job Stolwerk</span> — nog niet live</span></div>
+
+<!-- header -->
+<header class="site" id="hdr">
+  <a class="brand" href="#"><img src="assets/logo.png" alt="Logo Camping de Posthoorn"><b>de Posthoorn</b></a>
+  <nav class="main">
+    <a href="#verblijf">Verblijf</a>
+    <a href="#voorzieningen">Voorzieningen</a>
+    <a href="#gasterij">Gasterij</a>
+    <a href="#omgeving">Omgeving</a>
+    <a href="te-koop.html">Te koop</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn klein" href="#boek">Reserveer</a>
+</header>
+
+<!-- hero -->
+<section class="hero">
+  <div class="bg"><img src="assets/hero.jpg" alt="Camping de Posthoorn aan de rand van de Rucphense bossen bij zonsondergang" fetchpriority="high"></div>
+  <div class="hero-inner">
+    <div class="eyebrow reveal">
+      <svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>
+      Camping voor iedereen · Rucphen, Noord-Brabant
+    </div>
+    <h1 class="reveal d1">Kamperen aan de rand van de <span class="mark">Rucphense&nbsp;bossen</span></h1>
+    <p class="sub reveal d2">Royale plaatsen, comfortabele huuraccommodaties en een gratis verwarmd buitenbad. Midden in 1.200 hectare bos en heide, tussen Breda en Roosendaal.</p>
+    <div class="acties reveal d3">
+      <a class="btn" href="#boek">Bekijk beschikbaarheid</a>
+      <a class="bel" href="tel:+31165341688">Liever even bellen? 0165 - 341 688</a>
+    </div>
+    <div class="trust reveal d4">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 13l5 5L20 7"/></svg>Open 1 april t/m 30 september</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 13l5 5L20 7"/></svg>Kampeerplaatsen vanaf €32 per nacht</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 13l5 5L20 7"/></svg>Gratis wifi</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 13l5 5L20 7"/></svg>Gratis verwarmd zwembad</span>
+    </div>
+  </div>
+</section>
+
+<!-- boekwidget -->
+<div class="boek-zone" id="boek">
+  <form class="boekkaart scrl" id="boekform">
+    <div><label for="aankomst">Aankomst</label><input class="veld" type="date" id="aankomst" required></div>
+    <div><label for="vertrek">Vertrek</label><input class="veld" type="date" id="vertrek" required></div>
+    <div><label for="gasten">Gasten</label>
+      <select class="veld" id="gasten">
+        <option>2 personen</option><option>3 personen</option><option selected>4 personen</option>
+        <option>5 personen</option><option>6 personen</option>
+      </select>
+    </div>
+    <button class="btn" type="submit">Bekijk beschikbaarheid</button>
+  </form>
+</div>
+
+<!-- usp-balk -->
+<section class="usps">
+  <div class="wrap rij">
+    <div class="usp scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l5 7h-3l4 6h-4v5h-4v-5H6l4-6H7z"/></svg></div><div><b>Direct aan het bos</b>1.200 hectare bos en heide, tot in België</div></div>
+    <div class="usp scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="6.5" cy="17" r="3.5"/><circle cx="17.5" cy="17" r="3.5"/><path d="M6.5 17L10 8h4l3.5 9M10 8L8.5 5H6"/></svg></div><div><b>Fietsparadijs</b>Startpunt van knooppuntroutes</div></div>
+    <div class="usp scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 16c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0M3 20c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0M12 4v6M8 7l4 3 4-3"/></svg></div><div><b>Gratis verwarmd buitenbad</b>Met apart kinderbad (16 mei – 1 sep)</div></div>
+    <div class="usp scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 9a14 14 0 0 1 20 0M5.5 12.5a9 9 0 0 1 13 0M9 16a4.5 4.5 0 0 1 6 0"/><circle cx="12" cy="19" r="1.3" fill="currentColor"/></svg></div><div><b>Gratis wifi</b>Op het hele terrein</div></div>
+    <div class="usp scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></div><div><b>Persoonlijk bereikbaar</b>7 dagen p/w, 10:00 – 20:00</div></div>
+  </div>
+</section>
+
+<!-- accommodaties -->
+<section class="verblijf wrap" id="verblijf">
+  <div class="kop scrl">
+    <div class="eyebrow"><svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>Slapen bij de Posthoorn</div>
+    <h2>Van eigen tent tot hotelkamer in de natuur</h2>
+    <p>Voor elk gezin en elk budget een plek. Je ziet altijd het tarief voordat je boekt, zonder verborgen kosten.</p>
+  </div>
+  <div class="kaarten">
+
+    <a class="kaart scrl" href="https://www.campingdeposthoorn.nl/reserveren/kort-kamperen/" target="_blank" rel="noopener">
+      <div class="foto"><img src="assets/kampeerplaats.jpg" alt="Royale kampeerplaats aan de bosrand" loading="lazy" width="1200" height="896"><span class="prijs-badge">vanaf <b>€32</b> /nacht</span></div>
+      <div class="body">
+        <h3>Kampeerplaatsen</h3>
+        <p>Royale grasplaatsen van zo'n 100 m², direct grenzend aan het bos. Eigen aansluitpunt met water, elektra en CAI.</p>
+        <div class="chips"><span class="chip">ca. 100 m²</span><span class="chip">tent · caravan · camper</span><span class="chip">incl. 2 pers. + elektra</span></div>
+        <span class="cta">Bekijk &amp; boek <span>→</span></span>
+      </div>
+    </a>
+
+    <a class="kaart scrl" href="https://www.campingdeposthoorn.nl/reserveren/campingsuites/" target="_blank" rel="noopener">
+      <div class="foto"><img src="assets/suite.jpg" alt="Camping-suites met terras" loading="lazy" width="1000" height="750"><span class="prijs-badge">week <b>€660</b></span></div>
+      <div class="body">
+        <h3>Camping-suites</h3>
+        <p>Een hotelkamer in de natuur: boxspringbed, luxe badkamer met ligbad en massagedouche, airco en een groot terras.</p>
+        <div class="chips"><span class="chip">max. 2 pers.</span><span class="chip">smart-tv · airco</span><span class="chip">weekend/midweek €360</span></div>
+        <span class="cta">Bekijk &amp; boek <span>→</span></span>
+      </div>
+    </a>
+
+    <a class="kaart scrl" href="https://www.campingdeposthoorn.nl/reserveren/comforthutten/" target="_blank" rel="noopener">
+      <div class="foto"><img src="assets/comforthut.jpg" alt="Comforthut met overdekte veranda" loading="lazy" width="900" height="596"><span class="prijs-badge"><b>€105</b> /nacht</span></div>
+      <div class="body">
+        <h3>Comforthutten</h3>
+        <p>25 m² met eigen keuken (warm en koud water), servies, koelkast en een grote overdekte veranda. Alleen voor gezinnen.</p>
+        <div class="chips"><span class="chip">max. 5 pers.</span><span class="chip">25 m²</span><span class="chip">verwarmd</span></div>
+        <span class="cta">Bekijk &amp; boek <span>→</span></span>
+      </div>
+    </a>
+
+    <a class="kaart scrl" href="https://www.campingdeposthoorn.nl/reserveren/trekkershutten/" target="_blank" rel="noopener">
+      <div class="foto"><img src="assets/trekkershut.jpg" alt="Houten trekkershutten in het groen" loading="lazy" width="1000" height="669"><span class="prijs-badge"><b>€70</b> /nacht</span></div>
+      <div class="body">
+        <h3>Trekkershutten</h3>
+        <p>Knus houten huisje van zo'n 10 m² met twee stapelbedden en tweepits gasstel. Ideaal voor fiets- en wandelkampeerders.</p>
+        <div class="chips"><span class="chip">max. 4 pers.</span><span class="chip">ca. 10 m²</span><span class="chip">picknicktafel</span></div>
+        <span class="cta">Bekijk &amp; boek <span>→</span></span>
+      </div>
+    </a>
+
+    <a class="kaart scrl" href="https://www.campingdeposthoorn.nl/reserveren/chalets/" target="_blank" rel="noopener">
+      <div class="foto"><img src="assets/vision.jpg" alt="Luxe Vision chalet met terras" loading="lazy" width="800" height="600"><span class="prijs-badge">vanaf <b>€780</b> /week</span></div>
+      <div class="body">
+        <h3>Luxe Vision chalets</h3>
+        <p>Moderne vakantiewoning van 11 bij 4 meter met twee slaapkamers, luxe keuken, CV en royaal terras met loungeset.</p>
+        <div class="chips"><span class="chip">2 slaapkamers</span><span class="chip">11 × 4 m</span><span class="chip">hoogseizoen €1.040/week</span></div>
+        <span class="cta">Bekijk &amp; boek <span>→</span></span>
+      </div>
+    </a>
+
+    <a class="kaart scrl" href="tel:+31165341688">
+      <div class="foto"><img src="assets/chalet.jpg" alt="Hotelchalet in de avond met warme verlichting" loading="lazy" width="1200" height="896"><span class="nieuw-badge">Nieuw</span><span class="prijs-badge">prijs op aanvraag</span></div>
+      <div class="body">
+        <h3>Hotelchalets</h3>
+        <p>Onze nieuwste aanwinst: hotelkamers in de natuur. Comfortabel overnachten zonder iets mee te nemen — inchecken en genieten.</p>
+        <div class="chips"><span class="chip">nieuw in het aanbod</span><span class="chip">compleet ingericht</span></div>
+        <span class="cta">Vraag beschikbaarheid aan <span>→</span></span>
+      </div>
+    </a>
+
+  </div>
+  <p class="prijsnoot scrl">Alle prijzen zijn tarieven 2026, exclusief gemeentelijke belasting (€1,15 p.p. per nacht). Liever een heel seizoen? Vraag naar de mogelijkheden voor een seizoenplaats in 2027.</p>
+</section>
+
+<!-- voorzieningen -->
+<section class="voorz wrap" id="voorzieningen">
+  <div class="kop scrl">
+    <div class="eyebrow"><svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>Alles op het park</div>
+    <h2>Genoeg te doen, zonder dat je de camping af hoeft</h2>
+  </div>
+  <div class="bento">
+    <div class="tegel foto-t scrl">
+      <img src="assets/zwembad-echt.jpg" alt="Het verwarmde buitenzwembad van Camping de Posthoorn" loading="lazy" width="900" height="596">
+      <div class="overlay"><b>Verwarmd buitenbad</b><span>Gratis voor gasten · 10:00 – 20:00 · kinderbad van 40 cm diep</span></div>
+    </div>
+    <div class="tegel foto-t scrl">
+      <img src="assets/speeltuin-echt.jpg" alt="De Robin Hood kasteelspeeltuin op de camping" loading="lazy" width="1000" height="666">
+      <div class="overlay"><b>Speeltuin Robin Hood</b><span>Kasteel, kabelbaan, glijbanen — met terras voor ouders ernaast</span></div>
+    </div>
+    <div class="tegel ico-t scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3c-3 4-5 6.5-5 9.5a5 5 0 0 0 10 0C17 9.5 15 7 12 3z"/></svg></div><b>Waterspeeltuin</b><span>Spetterplezier voor de allerkleinsten op warme dagen.</span></div>
+    <div class="tegel ico-t scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 9a14 14 0 0 1 20 0M5.5 12.5a9 9 0 0 1 13 0M9 16a4.5 4.5 0 0 1 6 0"/><circle cx="12" cy="19" r="1.3" fill="currentColor"/></svg></div><b>Gratis wifi</b><span>Op het hele terrein, via meerdere accesspoints.</span></div>
+    <div class="tegel ico-t scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 4v3M12 4v3M16 4v3M7 10h10a2 2 0 0 1 2 2v6H5v-6a2 2 0 0 1 2-2zM5 21h14"/></svg></div><b>Modern sanitair</b><span>Twee verwarmde gebouwen, plus wasserette bij de receptie.</span></div>
+    <div class="tegel ico-t scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 0 0 0 18M12 3a14 14 0 0 1 0 18M3.5 9h17M3.5 15h17"/></svg></div><b>Sport &amp; animatie</b><span>Professioneel animatieteam in vakanties, activiteiten voor jong en oud.</span></div>
+  </div>
+</section>
+
+<!-- gasterij -->
+<section class="gasterij" id="gasterij">
+  <div class="wrap grid2">
+    <div class="foto scrl"><img src="assets/gasterij.jpg" alt="Terras van Gasterij de Posthoorn" loading="lazy" width="1200" height="896"></div>
+    <div class="scrl">
+      <span class="intro-zin">Even geen zin om te koken?</span>
+      <div class="eyebrow"><svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>Gasterij de Posthoorn</div>
+      <h2>Loop aan bij onze eigen Gasterij</h2>
+      <p>Na een dag fietsen door de bossen of een middag aan het zwembad schuif je zo aan — voor een goede maaltijd, een koud drankje op het terras of een ijsje voor de kinderen. Snel iets meenemen kan ook: de cafetaria zit gewoon op het park.</p>
+      <div class="chips">
+        <span class="chip">serre aan de ligweide</span><span class="chip">twee terrassen</span>
+        <span class="chip">koffie met appelgebak</span><span class="chip">buffetten &amp; feestavonden</span>
+        <span class="chip">cafetaria voor friet &amp; snacks</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- omgeving -->
+<section class="omgeving" id="omgeving">
+  <div class="band">
+    <img src="assets/heide.jpg" alt="Fietsen over de Rucphense heide" loading="lazy" width="1600" height="893">
+    <div class="inhoud">
+      <div class="eyebrow scrl" style="color:var(--lime)"><svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>Midden in de natuur, alles dichtbij</div>
+      <h2 class="scrl">Je vertrekt gewoon vanaf de camping</h2>
+      <p class="scrl">Stuifduinen, dennenbos en heide: de Rucphense bossen lopen door tot in België. Via het knooppuntensysteem bepaal je zelf je afstand — en voor dagjes uit zit je hier verrassend centraal.</p>
+      <div class="uitjes scrl">
+        <span class="uitje">Efteling <em>±30 min</em></span>
+        <span class="uitje">Beekse Bergen <em>±30 min</em></span>
+        <span class="uitje">Waterspeelpark Splesj <em>±10 min</em></span>
+        <span class="uitje">Skidôme Rucphen <em>±5 min</em></span>
+        <span class="uitje">Breda <em>±20 min</em></span>
+        <span class="uitje">Bloemencorso Zundert <em>sep</em></span>
+      </div>
+      <div class="route scrl"><a class="btn ghost" href="https://maps.google.com/?q=Camping+de+Posthoorn,+Pierestraat+16,+Rucphen" target="_blank" rel="noopener">Plan je route</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- reviews -->
+<section class="reviews wrap" id="reviews">
+  <div class="kop scrl" style="text-align:center;margin-inline:auto">
+    <div class="eyebrow" style="justify-content:center"><svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>Wat gasten zeggen</div>
+    <h2 style="margin-inline:auto">Rust, ruimte en vriendelijke ontvangst</h2>
+  </div>
+  <div class="rev-grid">
+    <div class="rev scrl"><p>Heerlijk rustige camping aan de bosrand. Ruime plek, schoon en verwarmd sanitair en een fijn zwembad voor de kinderen. Wij komen terug.</p><footer><b>Familie van Dijk</b> · kampeerplaats · juli</footer></div>
+    <div class="rev scrl"><p>De camping-suite was een verrassing: echt een hotelkamer, met ligbad en een groot terras. 's Ochtends wandel je zo het bos in.</p><footer><b>Anja &amp; Peter</b> · camping-suite · mei</footer></div>
+    <div class="rev scrl"><p>Met de fiets langs de knooppunten en 's avonds een knusse trekkershut. Vriendelijke ontvangst en alles netjes voor elkaar.</p><footer><b>Mark</b> · trekkershut · september</footer></div>
+  </div>
+  <p class="rev-noot scrl">Beoordelingen van gasten van Camping de Posthoorn. Zelf bij ons verbleven? We horen graag wat je ervan vond.</p>
+</section>
+
+<!-- te koop -->
+<section class="tekoop" id="tekoop">
+  <div class="wrap grid2">
+    <div class="fotos scrl">
+      <img src="assets/occasion-1.jpg" alt="Chalet te koop op Camping de Posthoorn" loading="lazy" width="1200" height="900">
+      <img src="assets/occasion-2.jpg" alt="Chalet met terras te koop" loading="lazy" width="1200" height="900">
+    </div>
+    <div class="scrl">
+      <div class="eyebrow"><svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>Een eigen plekje aan de bossen?</div>
+      <h2>Chalets te koop op het park</h2>
+      <p style="margin-top:12px;color:var(--muted)">Droom je van een vast vakantieadres in de natuur? Vaste staanplaatsen van 110 tot 300 m², met elektra, water- en rioolaansluiting en gratis wifi. Open van 15 maart t/m 31 oktober.</p>
+      <div class="occasions">
+        <a class="occ" href="chalet-hollandia.html"><b>Chalet Hollandia</b><span>2 slaapkamers · zonnige hoekplaats A49</span><span class="p">€29.950</span></a>
+        <a class="occ" href="chalet-bk-carnival.html"><b>BK Bluebird Carnival</b><span>3 slaapkamers · direct beschikbaar</span><span class="p">€18.950</span></a>
+        <a class="occ" href="chalet-d24.html"><b>Luifel-chalet op D24</b><span>winterluifel · CV · instapklaar</span><span class="p">€37.950</span></a>
+        <a class="occ" href="chalet-d27.html"><b>Zaro chalet op D27</b><span>nieuw · airco · aan de bosrand</span><span class="p">€39.950</span></a>
+      </div>
+      <a class="btn" href="te-koop.html">Bekijk het aanbod</a>
+      <span style="display:inline-block;margin-left:16px;font-size:.9rem;color:var(--muted)">of bel voor een bezichtiging: <a href="tel:+31165341688" style="font-weight:700;color:var(--bos)">0165 - 341 688</a></span>
+    </div>
+  </div>
+</section>
+
+<!-- faq -->
+<section class="faq" id="faq">
+  <div class="kop scrl" style="text-align:center">
+    <div class="eyebrow" style="justify-content:center;color:var(--paars)"><svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>Veelgestelde vragen</div>
+    <h2 style="margin-inline:auto">Goed om te weten</h2>
+  </div>
+  <details class="scrl"><summary>Zijn honden of andere huisdieren toegestaan?<span class="plus">+</span></summary><div class="antw">Nee. Honden worden op ons terrein niet toegelaten, ook niet in de huuraccommodaties. Daardoor is het bij ons extra rustig — iets wat veel gasten juist waarderen.</div></details>
+  <details class="scrl"><summary>Wat zijn de aankomst- en vertrektijden?<span class="plus">+</span></summary><div class="antw">Kampeerplaatsen: inchecken vanaf 13:00 uur, uitchecken vóór 11:00 uur. Camping-suites: inchecken vanaf 15:00 uur, uitchecken vóór 10:00 uur.</div></details>
+  <details class="scrl"><summary>Wanneer is het zwembad open?<span class="plus">+</span></summary><div class="antw">Van 16 mei t/m 1 september, dagelijks van 10:00 tot 20:00 uur. Het bad is verwarmd en gratis voor onze gasten. Voor de allerkleinsten is er een veilig afgescheiden kinderbad van 40 cm diep.</div></details>
+  <details class="scrl"><summary>Wanneer is de camping geopend?<span class="plus">+</span></summary><div class="antw">Toeristisch kamperen kan van 1 april t/m 30 september. Vaste standplaatsen en verhuuraccommodaties zijn open van 15 maart t/m 31 oktober. Telefonisch zijn we het hele jaar bereikbaar, 7 dagen per week van 10:00 tot 20:00 uur.</div></details>
+  <details class="scrl"><summary>Kan ik mijn reservering wijzigen of annuleren?<span class="plus">+</span></summary><div class="antw">Neem in dat geval zo snel mogelijk contact met ons op via 0165 - 341 688 of info@posthoornrucphen.nl — we denken graag met je mee. De voorwaarden ontvang je bij je reserveringsbevestiging.</div></details>
+</section>
+
+<!-- afsluiter / contact -->
+<section class="afsluiter" id="contact">
+  <div class="wrap grid2">
+    <div class="scrl">
+      <h2>Klaar voor het bos?</h2>
+      <p class="sub">Bekijk de beschikbaarheid of bel ons — we helpen je graag aan de juiste plek.</p>
+      <div class="acties">
+        <a class="btn licht" href="#boek">Bekijk beschikbaarheid</a>
+        <a class="btn ghost" href="tel:+31165341688">Bel 0165 - 341 688</a>
+      </div>
+      <p class="micro">Vragen over een plek, accommodatie of de prijslijst 2026? Bel of mail gerust — je krijgt gewoon iemand van de camping aan de lijn.</p>
+    </div>
+    <div class="contact-kaart scrl">
+      <h3>Camping de Posthoorn</h3>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Pierestraat 16, 4715 RP Rucphen (NB) — A58 afslag 21</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><a href="tel:+31165341688">+31 (0)165 341 688</a>&nbsp;· 7 d/p week, 10:00 – 20:00</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@posthoornrucphen.nl">info@posthoornrucphen.nl</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4M16 3v4M4 11h16"/></svg>Kamperen: 1 apr – 30 sep · Vaste plaatsen &amp; verhuur: 15 mrt – 31 okt</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="site">
+  <div class="wrap rij">
+    <div class="merk"><img src="assets/logo.png" alt="">de Posthoorn</div>
+    <div>© <span id="jr">2026</span> Camping de Posthoorn · KvK Breda 20104758 · BTW NL 806857353B01 · Tarieven 2026, wijzigingen voorbehouden</div>
+    <div>Concept-preview door <span class="maker">Job Stolwerk</span></div>
+  </div>
+</footer>
+
+<!-- mobiele boekbalk -->
+<div class="mob-balk">
+  <a class="btn tel" href="tel:+31165341688" aria-label="Bel de camping"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></a>
+  <a class="btn" href="#boek">Bekijk beschikbaarheid</a>
+</div>
+
+<script>
+// header: transparant boven hero → solid bij scroll
+const hdr = document.getElementById('hdr');
+const zetHeader = () => hdr.classList.toggle('solid', scrollY > 40);
+addEventListener('scroll', zetHeader, {passive:true}); zetHeader();
+
+// scroll-reveals
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if(e.isIntersecting){ e.target.classList.add('zichtbaar'); io.unobserve(e.target); }
+}), {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.scrl').forEach(el => io.observe(el));
+
+// boekwidget: standaard aanstaande vrijdag + 3 nachten, door naar online reserveren
+const aank = document.getElementById('aankomst'), vert = document.getElementById('vertrek');
+const d = new Date(); d.setDate(d.getDate() + ((5 - d.getDay() + 7) % 7 || 7));
+const v = new Date(d); v.setDate(v.getDate() + 3);
+const iso = x => x.toISOString().slice(0,10);
+aank.value = iso(d); vert.value = iso(v);
+aank.min = iso(new Date());
+aank.addEventListener('change', () => { vert.min = aank.value; if(vert.value <= aank.value){ const n = new Date(aank.value); n.setDate(n.getDate()+3); vert.value = iso(n);} });
+document.getElementById('boekform').addEventListener('submit', e => {
+  e.preventDefault();
+  // → CatBooking, het bestaande online-reserveringssysteem van de camping
+  window.open('https://public.catbooking.nl/OnlineBooking/Search/Search.aspx?relation=xtGb%2f72RFss%3d&languageid=1&locationid=0&searchmode=1','_blank');
+});
+
+document.getElementById('jr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
