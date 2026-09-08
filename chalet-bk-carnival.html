@@ -1,144 +1,66 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BK Bluebird Carnival — te koop op Camping de Posthoorn</title>
-<meta name="description" content="BK Bluebird Carnival te koop op Camping de Posthoorn in Rucphen. Uit voorraad · transportklaar. Vraagprijs €18.950. Bezichtigen kan dagelijks op afspraak.">
-<link rel="icon" href="assets/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDDsmdTQ3j6zbXWjgeg.woff2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXiWtFCc.woff2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/stijl.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Camping de Posthoorn — private preview</title>
+<style>
+  *{margin:0;box-sizing:border-box}
+  body{min-height:100svh;display:flex;align-items:center;justify-content:center;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#f2f0ec;
+    background:#15181c}
+  .card{text-align:center;padding:0 24px;max-width:380px;width:100%}
+  p.kick{font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:#9aa0a6}
+  h1{font-size:1.5rem;font-weight:600;margin-top:10px}
+  form{margin-top:28px;display:flex;flex-direction:column;gap:10px}
+  input{padding:14px 16px;background:#1e2227;border:1px solid #3a3f46;border-radius:6px;
+    color:#f2f0ec;font-size:1rem;text-align:center}
+  input:focus{outline:none;border-color:#6b8afd}
+  button{padding:14px;background:#f2f0ec;color:#15181c;border:none;border-radius:6px;
+    cursor:pointer;font-size:.85rem;font-weight:600}
+  button:disabled{opacity:.5;cursor:default}
+  .err{min-height:1.2em;margin-top:12px;font-size:.82rem;color:#ff8a80;opacity:0}
+  .err.show{opacity:1}
+</style>
 </head>
 <body>
-
-<div class="preview-bar"><span class="dot"></span><span><strong>Concept-preview</strong> <span class="hide-sm">· gemaakt door</span> <span class="maker">Job Stolwerk</span> — nog niet live</span></div>
-
-<header class="site solid" id="hdr" data-vast>
-  <a class="brand" href="index.html"><img src="assets/logo.png" alt="Logo Camping de Posthoorn"><b>de Posthoorn</b></a>
-  <nav class="main">
-    <a href="index.html#verblijf">Verblijf</a>
-    <a href="index.html#voorzieningen">Voorzieningen</a>
-    <a href="index.html#gasterij">Gasterij</a>
-    <a href="index.html#omgeving">Omgeving</a>
-    <a href="te-koop.html" class="actief">Te koop</a>
-    <a href="index.html#contact">Contact</a>
-  </nav>
-  <a class="btn klein" href="index.html#boek">Reserveer</a>
-</header>
-
-<section class="detail wrap">
-  <a class="terug" href="te-koop.html">← Alle chalets te koop</a>
-  <div class="detail-grid">
-
-    <div class="galerij">
-      <div class="groot"><img id="grootFoto" src="assets/chalets/carnival-1.jpg" alt="BK Bluebird Carnival"></div>
-      <div class="thumbs">
-        <button type="button" class="actief" data-foto="assets/chalets/carnival-1.jpg" aria-label="Foto 1"><img src="assets/chalets/carnival-1.jpg" alt="BK Bluebird Carnival foto 1" loading="lazy"></button>
-        <button type="button" class="" data-foto="assets/chalets/carnival-2.jpg" aria-label="Foto 2"><img src="assets/chalets/carnival-2.jpg" alt="BK Bluebird Carnival foto 2" loading="lazy"></button>
-        <button type="button" class="" data-foto="assets/chalets/carnival-3.jpg" aria-label="Foto 3"><img src="assets/chalets/carnival-3.jpg" alt="BK Bluebird Carnival foto 3" loading="lazy"></button>
-        <button type="button" class="" data-foto="assets/chalets/carnival-4.jpg" aria-label="Foto 4"><img src="assets/chalets/carnival-4.jpg" alt="BK Bluebird Carnival foto 4" loading="lazy"></button>
-      </div>
-    </div>
-
-    <aside class="koop-kaart">
-      <span class="plek">Uit voorraad · transportklaar</span>
-      <h1>BK Bluebird Carnival</h1>
-      <div class="chips" style="margin:4px 0 8px"><span class="chip" style="background:var(--lime);border-color:var(--lime)">Direct beschikbaar</span></div>
-      <div class="prijs">€18.950 <small>vraagprijs</small></div>
-      <div class="acties">
-        <a class="btn" href="tel:+31165341688">Bel voor een bezichtiging</a>
-        <a class="btn rand" href="mailto:info@posthoornrucphen.nl?subject=Bezichtiging%20BK%20Bluebird%20Carnival">Stel een vraag per mail</a>
-      </div>
-      <p class="noot">Bezichtigen kan dagelijks, op afspraak. Jaarlijkse staanplaatskosten op aanvraag.</p>
-      <div class="spec-lijst">
-          <div class="spec-rij"><span>Status</span><span>Direct beschikbaar, transportklaar</span></div>
-          <div class="spec-rij"><span>Slaapkamers</span><span>3</span></div>
-          <div class="spec-rij"><span>Toiletten</span><span>2</span></div>
-          <div class="spec-rij"><span>Sanitair</span><span>Douche en wastafel</span></div>
-          <div class="spec-rij"><span>Keuken</span><span>Koelkast en vriezer</span></div>
-          <div class="spec-rij"><span>Verwarming</span><span>Nieuwe boiler (zonder waakvlam)</span></div>
-          <div class="spec-rij"><span>Beglazing</span><span>Kunststof dubbel glas</span></div>
-          <div class="spec-rij"><span>Dak</span><span>Pannendak met goten</span></div>
-      </div>
-    </aside>
-
-  </div>
-
-  <div class="detail-tekst">
-    <h2>Over dit chalet</h2>
-    <p>De BK Bluebird Carnival is een ruim chalet met drie slaapkamers, twee toiletten en hoge plafonds. Het chalet is ingeruild, staat los te koop en is transportklaar: per direct mee te nemen of te plaatsen.</p>
-    <p style="margin-top:12px">Binnen vind je een nette keuken met koelkast en vriezer, een douche met wastafel en een nieuwe boiler zonder waakvlam. Goed om te weten: de kampeerplaatsen op het park zitten voor 2026 vol, dit chalet koop je dus los.</p>
-    <h2>Kenmerken</h2>
-    <ul class="kenmerken">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 13l5 5L20 7"/></svg>Drie slaapkamers, ideaal voor een gezin</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 13l5 5L20 7"/></svg>Twee toiletten</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 13l5 5L20 7"/></svg>Hoge plafonds en nette afwerking</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 13l5 5L20 7"/></svg>Nieuwe boiler zonder waakvlam</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 13l5 5L20 7"/></svg>Per direct mee te nemen of te plaatsen</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 13l5 5L20 7"/></svg>Los te koop, ook buiten het park te plaatsen</li>
-    </ul>
-  </div>
-</section>
-
-<section class="ook wrap">
-  <div class="kop">
-    <div class="eyebrow"><svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>Ook te koop op het park</div>
-  </div>
-  <div class="ook-grid">
-      <a class="aanbod-kaart" href="chalet-hollandia.html">
-        <div class="foto"><img src="assets/chalets/hollandia-0.jpg" alt="Chalet Hollandia" loading="lazy"></div>
-        <div class="body">
-          <span class="plek">Plaats A49 · zonnige hoekplaats</span>
-          <h2 style="font-size:1.15rem">Chalet Hollandia</h2>
-          <div class="onder"><span class="prijs" style="font-size:1.15rem">€29.950</span><span class="cta">Bekijk <span>→</span></span></div>
-        </div>
-      </a>
-      <a class="aanbod-kaart" href="chalet-d24.html">
-        <div class="foto"><img src="assets/chalets/d24-1.jpg" alt="Luifel-chalet (Globus Zest)" loading="lazy"><span class="status-badge">Instapklaar</span></div>
-        <div class="body">
-          <span class="plek">Plaats D24 · ruime huurplaats</span>
-          <h2 style="font-size:1.15rem">Luifel-chalet (Globus Zest)</h2>
-          <div class="onder"><span class="prijs" style="font-size:1.15rem">€37.950</span><span class="cta">Bekijk <span>→</span></span></div>
-        </div>
-      </a>
-      <a class="aanbod-kaart" href="chalet-d27.html">
-        <div class="foto"><img src="assets/chalets/d27-4.jpg" alt="Zaro chalet (nieuw)" loading="lazy"><span class="status-badge">Nieuw</span></div>
-        <div class="body">
-          <span class="plek">Plaats D27 · rustig aan de bosrand</span>
-          <h2 style="font-size:1.15rem">Zaro chalet (nieuw)</h2>
-          <div class="onder"><span class="prijs" style="font-size:1.15rem">€39.950</span><span class="cta">Bekijk <span>→</span></span></div>
-        </div>
-      </a>
-  </div>
-</section>
-
-<footer class="site">
-  <div class="wrap rij">
-    <div class="merk"><img src="assets/logo.png" alt="">de Posthoorn</div>
-    <div>© <span id="jr">2026</span> Camping de Posthoorn · KvK Breda 20104758 · BTW NL 806857353B01 · Prijswijzigingen voorbehouden</div>
-    <div>Concept-preview door <span class="maker">Job Stolwerk</span></div>
-  </div>
-</footer>
-
-<div class="mob-balk">
-  <a class="btn tel" href="mailto:info@posthoornrucphen.nl?subject=Bezichtiging%20BK%20Bluebird%20Carnival" aria-label="Mail de camping"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
-  <a class="btn" href="tel:+31165341688">Bel voor een bezichtiging</a>
+<div class="card">
+  <p class="kick">Private preview</p>
+  <h1>Camping de Posthoorn</h1>
+  <form id="f">
+    <input id="pw" type="password" placeholder="Wachtwoord" autocomplete="off" autofocus />
+    <button id="btn" type="submit">Openen</button>
+  </form>
+  <p class="err" id="err"></p>
 </div>
-
 <script>
-// foto-galerij
-const groot = document.getElementById('grootFoto');
-document.querySelectorAll('.thumbs button').forEach(b => b.addEventListener('click', () => {
-  groot.src = b.dataset.foto;
-  document.querySelectorAll('.thumbs button').forEach(x => x.classList.remove('actief'));
-  b.classList.add('actief');
-}));
-document.getElementById('jr').textContent = new Date().getFullYear();
+const DATA={"s":"nJ/riRuvoGRr6jLOx1n6Cg==","i":"uqng7/adAl/J163F","c":"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","n":250000};
+const KEY="site-gate-pw";
+const dec=s=>{const b=atob(s),u=new Uint8Array(b.length);for(let i=0;i<b.length;i++)u[i]=b.charCodeAt(i);return u;};
+async function unlock(pw){
+  const km=await crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveKey"]);
+  const key=await crypto.subtle.deriveKey({name:"PBKDF2",salt:dec(DATA.s),iterations:DATA.n,hash:"SHA-256"},km,{name:"AES-GCM",length:256},false,["decrypt"]);
+  const pt=await crypto.subtle.decrypt({name:"AES-GCM",iv:dec(DATA.i)},key,dec(DATA.c));
+  return new TextDecoder().decode(pt);
+}
+async function tryShow(pw){
+  const html=await unlock(pw);
+  document.open();document.write(html);document.close();
+}
+const saved=sessionStorage.getItem(KEY);
+if(saved){tryShow(saved).catch(()=>sessionStorage.removeItem(KEY));}
+const f=document.getElementById("f"),pw=document.getElementById("pw"),err=document.getElementById("err"),btn=document.getElementById("btn");
+f.addEventListener("submit",async e=>{
+  e.preventDefault();err.classList.remove("show");btn.disabled=true;btn.textContent="Bezig…";
+  try{
+    await tryShow(pw.value.trim());
+    sessionStorage.setItem(KEY,pw.value.trim());
+  }catch(_){
+    err.textContent="Dat wachtwoord klopt niet.";err.classList.add("show");
+    btn.disabled=false;btn.textContent="Openen";pw.value="";pw.focus();
+  }
+});
 </script>
 </body>
 </html>

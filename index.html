@@ -1,344 +1,66 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Camping de Posthoorn — Camping voor iedereen, aan de Rucphense bossen</title>
-<meta name="description" content="Kamperen aan de rand van de Rucphense bossen. Royale plaatsen, camping-suites, hutten en chalets, gratis verwarmd zwembad. Bekijk beschikbaarheid en boek direct online.">
-<link rel="icon" href="assets/logo.png">
-<link rel="preload" as="image" href="assets/hero.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDDsmdTQ3j6zbXWjgeg.woff2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXiWtFCc.woff2">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/stijl.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Camping de Posthoorn — private preview</title>
+<style>
+  *{margin:0;box-sizing:border-box}
+  body{min-height:100svh;display:flex;align-items:center;justify-content:center;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#f2f0ec;
+    background:#15181c}
+  .card{text-align:center;padding:0 24px;max-width:380px;width:100%}
+  p.kick{font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:#9aa0a6}
+  h1{font-size:1.5rem;font-weight:600;margin-top:10px}
+  form{margin-top:28px;display:flex;flex-direction:column;gap:10px}
+  input{padding:14px 16px;background:#1e2227;border:1px solid #3a3f46;border-radius:6px;
+    color:#f2f0ec;font-size:1rem;text-align:center}
+  input:focus{outline:none;border-color:#6b8afd}
+  button{padding:14px;background:#f2f0ec;color:#15181c;border:none;border-radius:6px;
+    cursor:pointer;font-size:.85rem;font-weight:600}
+  button:disabled{opacity:.5;cursor:default}
+  .err{min-height:1.2em;margin-top:12px;font-size:.82rem;color:#ff8a80;opacity:0}
+  .err.show{opacity:1}
+</style>
 </head>
 <body>
-
-<!-- preview-banner -->
-<div class="preview-bar"><span class="dot"></span><span><strong>Concept-preview</strong> <span class="hide-sm">· gemaakt door</span> <span class="maker">Job Stolwerk</span> — nog niet live</span></div>
-
-<!-- header -->
-<header class="site" id="hdr">
-  <a class="brand" href="#"><img src="assets/logo.png" alt="Logo Camping de Posthoorn"><b>de Posthoorn</b></a>
-  <nav class="main">
-    <a href="#verblijf">Verblijf</a>
-    <a href="#voorzieningen">Voorzieningen</a>
-    <a href="#gasterij">Gasterij</a>
-    <a href="#omgeving">Omgeving</a>
-    <a href="te-koop.html">Te koop</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <a class="btn klein" href="#boek">Reserveer</a>
-</header>
-
-<!-- hero -->
-<section class="hero">
-  <div class="bg"><img src="assets/hero.jpg" alt="Camping de Posthoorn aan de rand van de Rucphense bossen bij zonsondergang" fetchpriority="high"></div>
-  <div class="hero-inner">
-    <div class="eyebrow reveal">
-      <svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>
-      Camping voor iedereen · Rucphen, Noord-Brabant
-    </div>
-    <h1 class="reveal d1">Kamperen aan de rand van de <span class="mark">Rucphense&nbsp;bossen</span></h1>
-    <p class="sub reveal d2">Royale plaatsen, comfortabele huuraccommodaties en een gratis verwarmd buitenbad. Midden in 1.200 hectare bos en heide, tussen Breda en Roosendaal.</p>
-    <div class="acties reveal d3">
-      <a class="btn" href="#boek">Bekijk beschikbaarheid</a>
-      <a class="bel" href="tel:+31165341688">Liever even bellen? 0165 - 341 688</a>
-    </div>
-    <div class="trust reveal d4">
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 13l5 5L20 7"/></svg>Open 1 april t/m 30 september</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 13l5 5L20 7"/></svg>Kampeerplaatsen vanaf €32 per nacht</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 13l5 5L20 7"/></svg>Gratis wifi</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 13l5 5L20 7"/></svg>Gratis verwarmd zwembad</span>
-    </div>
-  </div>
-</section>
-
-<!-- boekwidget -->
-<div class="boek-zone" id="boek">
-  <form class="boekkaart scrl" id="boekform">
-    <div><label for="aankomst">Aankomst</label><input class="veld" type="date" id="aankomst" required></div>
-    <div><label for="vertrek">Vertrek</label><input class="veld" type="date" id="vertrek" required></div>
-    <div><label for="gasten">Gasten</label>
-      <select class="veld" id="gasten">
-        <option>2 personen</option><option>3 personen</option><option selected>4 personen</option>
-        <option>5 personen</option><option>6 personen</option>
-      </select>
-    </div>
-    <button class="btn" type="submit">Bekijk beschikbaarheid</button>
+<div class="card">
+  <p class="kick">Private preview</p>
+  <h1>Camping de Posthoorn</h1>
+  <form id="f">
+    <input id="pw" type="password" placeholder="Wachtwoord" autocomplete="off" autofocus />
+    <button id="btn" type="submit">Openen</button>
   </form>
+  <p class="err" id="err"></p>
 </div>
-
-<!-- usp-balk -->
-<section class="usps">
-  <div class="wrap rij">
-    <div class="usp scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l5 7h-3l4 6h-4v5h-4v-5H6l4-6H7z"/></svg></div><div><b>Direct aan het bos</b>1.200 hectare bos en heide, tot in België</div></div>
-    <div class="usp scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="6.5" cy="17" r="3.5"/><circle cx="17.5" cy="17" r="3.5"/><path d="M6.5 17L10 8h4l3.5 9M10 8L8.5 5H6"/></svg></div><div><b>Fietsparadijs</b>Startpunt van knooppuntroutes</div></div>
-    <div class="usp scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 16c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0M3 20c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0M12 4v6M8 7l4 3 4-3"/></svg></div><div><b>Gratis verwarmd buitenbad</b>Met apart kinderbad (16 mei – 1 sep)</div></div>
-    <div class="usp scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 9a14 14 0 0 1 20 0M5.5 12.5a9 9 0 0 1 13 0M9 16a4.5 4.5 0 0 1 6 0"/><circle cx="12" cy="19" r="1.3" fill="currentColor"/></svg></div><div><b>Gratis wifi</b>Op het hele terrein</div></div>
-    <div class="usp scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></div><div><b>Persoonlijk bereikbaar</b>7 dagen p/w, 10:00 – 20:00</div></div>
-  </div>
-</section>
-
-<!-- accommodaties -->
-<section class="verblijf wrap" id="verblijf">
-  <div class="kop scrl">
-    <div class="eyebrow"><svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>Slapen bij de Posthoorn</div>
-    <h2>Van eigen tent tot hotelkamer in de natuur</h2>
-    <p>Voor elk gezin en elk budget een plek. Je ziet altijd het tarief voordat je boekt, zonder verborgen kosten.</p>
-  </div>
-  <div class="kaarten">
-
-    <a class="kaart scrl" href="https://www.campingdeposthoorn.nl/reserveren/kort-kamperen/" target="_blank" rel="noopener">
-      <div class="foto"><img src="assets/kampeerplaats.jpg" alt="Royale kampeerplaats aan de bosrand" loading="lazy" width="1200" height="896"><span class="prijs-badge">vanaf <b>€32</b> /nacht</span></div>
-      <div class="body">
-        <h3>Kampeerplaatsen</h3>
-        <p>Royale grasplaatsen van zo'n 100 m², direct grenzend aan het bos. Eigen aansluitpunt met water, elektra en CAI.</p>
-        <div class="chips"><span class="chip">ca. 100 m²</span><span class="chip">tent · caravan · camper</span><span class="chip">incl. 2 pers. + elektra</span></div>
-        <span class="cta">Bekijk &amp; boek <span>→</span></span>
-      </div>
-    </a>
-
-    <a class="kaart scrl" href="https://www.campingdeposthoorn.nl/reserveren/campingsuites/" target="_blank" rel="noopener">
-      <div class="foto"><img src="assets/suite.jpg" alt="Camping-suites met terras" loading="lazy" width="1000" height="750"><span class="prijs-badge">week <b>€660</b></span></div>
-      <div class="body">
-        <h3>Camping-suites</h3>
-        <p>Een hotelkamer in de natuur: boxspringbed, luxe badkamer met ligbad en massagedouche, airco en een groot terras.</p>
-        <div class="chips"><span class="chip">max. 2 pers.</span><span class="chip">smart-tv · airco</span><span class="chip">weekend/midweek €360</span></div>
-        <span class="cta">Bekijk &amp; boek <span>→</span></span>
-      </div>
-    </a>
-
-    <a class="kaart scrl" href="https://www.campingdeposthoorn.nl/reserveren/comforthutten/" target="_blank" rel="noopener">
-      <div class="foto"><img src="assets/comforthut.jpg" alt="Comforthut met overdekte veranda" loading="lazy" width="900" height="596"><span class="prijs-badge"><b>€105</b> /nacht</span></div>
-      <div class="body">
-        <h3>Comforthutten</h3>
-        <p>25 m² met eigen keuken (warm en koud water), servies, koelkast en een grote overdekte veranda. Alleen voor gezinnen.</p>
-        <div class="chips"><span class="chip">max. 5 pers.</span><span class="chip">25 m²</span><span class="chip">verwarmd</span></div>
-        <span class="cta">Bekijk &amp; boek <span>→</span></span>
-      </div>
-    </a>
-
-    <a class="kaart scrl" href="https://www.campingdeposthoorn.nl/reserveren/trekkershutten/" target="_blank" rel="noopener">
-      <div class="foto"><img src="assets/trekkershut.jpg" alt="Houten trekkershutten in het groen" loading="lazy" width="1000" height="669"><span class="prijs-badge"><b>€70</b> /nacht</span></div>
-      <div class="body">
-        <h3>Trekkershutten</h3>
-        <p>Knus houten huisje van zo'n 10 m² met twee stapelbedden en tweepits gasstel. Ideaal voor fiets- en wandelkampeerders.</p>
-        <div class="chips"><span class="chip">max. 4 pers.</span><span class="chip">ca. 10 m²</span><span class="chip">picknicktafel</span></div>
-        <span class="cta">Bekijk &amp; boek <span>→</span></span>
-      </div>
-    </a>
-
-    <a class="kaart scrl" href="https://www.campingdeposthoorn.nl/reserveren/chalets/" target="_blank" rel="noopener">
-      <div class="foto"><img src="assets/vision.jpg" alt="Luxe Vision chalet met terras" loading="lazy" width="800" height="600"><span class="prijs-badge">vanaf <b>€780</b> /week</span></div>
-      <div class="body">
-        <h3>Luxe Vision chalets</h3>
-        <p>Moderne vakantiewoning van 11 bij 4 meter met twee slaapkamers, luxe keuken, CV en royaal terras met loungeset.</p>
-        <div class="chips"><span class="chip">2 slaapkamers</span><span class="chip">11 × 4 m</span><span class="chip">hoogseizoen €1.040/week</span></div>
-        <span class="cta">Bekijk &amp; boek <span>→</span></span>
-      </div>
-    </a>
-
-    <a class="kaart scrl" href="tel:+31165341688">
-      <div class="foto"><img src="assets/chalet.jpg" alt="Hotelchalet in de avond met warme verlichting" loading="lazy" width="1200" height="896"><span class="nieuw-badge">Nieuw</span><span class="prijs-badge">prijs op aanvraag</span></div>
-      <div class="body">
-        <h3>Hotelchalets</h3>
-        <p>Onze nieuwste aanwinst: hotelkamers in de natuur. Comfortabel overnachten zonder iets mee te nemen — inchecken en genieten.</p>
-        <div class="chips"><span class="chip">nieuw in het aanbod</span><span class="chip">compleet ingericht</span></div>
-        <span class="cta">Vraag beschikbaarheid aan <span>→</span></span>
-      </div>
-    </a>
-
-  </div>
-  <p class="prijsnoot scrl">Alle prijzen zijn tarieven 2026, exclusief gemeentelijke belasting (€1,15 p.p. per nacht). Liever een heel seizoen? Vraag naar de mogelijkheden voor een seizoenplaats in 2027.</p>
-</section>
-
-<!-- voorzieningen -->
-<section class="voorz wrap" id="voorzieningen">
-  <div class="kop scrl">
-    <div class="eyebrow"><svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>Alles op het park</div>
-    <h2>Genoeg te doen, zonder dat je de camping af hoeft</h2>
-  </div>
-  <div class="bento">
-    <div class="tegel foto-t scrl">
-      <img src="assets/zwembad-echt.jpg" alt="Het verwarmde buitenzwembad van Camping de Posthoorn" loading="lazy" width="900" height="596">
-      <div class="overlay"><b>Verwarmd buitenbad</b><span>Gratis voor gasten · 10:00 – 20:00 · kinderbad van 40 cm diep</span></div>
-    </div>
-    <div class="tegel foto-t scrl">
-      <img src="assets/speeltuin-echt.jpg" alt="De Robin Hood kasteelspeeltuin op de camping" loading="lazy" width="1000" height="666">
-      <div class="overlay"><b>Speeltuin Robin Hood</b><span>Kasteel, kabelbaan, glijbanen — met terras voor ouders ernaast</span></div>
-    </div>
-    <div class="tegel ico-t scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3c-3 4-5 6.5-5 9.5a5 5 0 0 0 10 0C17 9.5 15 7 12 3z"/></svg></div><b>Waterspeeltuin</b><span>Spetterplezier voor de allerkleinsten op warme dagen.</span></div>
-    <div class="tegel ico-t scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 9a14 14 0 0 1 20 0M5.5 12.5a9 9 0 0 1 13 0M9 16a4.5 4.5 0 0 1 6 0"/><circle cx="12" cy="19" r="1.3" fill="currentColor"/></svg></div><b>Gratis wifi</b><span>Op het hele terrein, via meerdere accesspoints.</span></div>
-    <div class="tegel ico-t scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M8 4v3M12 4v3M16 4v3M7 10h10a2 2 0 0 1 2 2v6H5v-6a2 2 0 0 1 2-2zM5 21h14"/></svg></div><b>Modern sanitair</b><span>Twee verwarmde gebouwen, plus wasserette bij de receptie.</span></div>
-    <div class="tegel ico-t scrl"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 0 0 0 18M12 3a14 14 0 0 1 0 18M3.5 9h17M3.5 15h17"/></svg></div><b>Sport &amp; animatie</b><span>Professioneel animatieteam in vakanties, activiteiten voor jong en oud.</span></div>
-  </div>
-</section>
-
-<!-- gasterij -->
-<section class="gasterij" id="gasterij">
-  <div class="wrap grid2">
-    <div class="foto scrl"><img src="assets/gasterij.jpg" alt="Terras van Gasterij de Posthoorn" loading="lazy" width="1200" height="896"></div>
-    <div class="scrl">
-      <span class="intro-zin">Even geen zin om te koken?</span>
-      <div class="eyebrow"><svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>Gasterij de Posthoorn</div>
-      <h2>Loop aan bij onze eigen Gasterij</h2>
-      <p>Na een dag fietsen door de bossen of een middag aan het zwembad schuif je zo aan — voor een goede maaltijd, een koud drankje op het terras of een ijsje voor de kinderen. Snel iets meenemen kan ook: de cafetaria zit gewoon op het park.</p>
-      <div class="chips">
-        <span class="chip">serre aan de ligweide</span><span class="chip">twee terrassen</span>
-        <span class="chip">koffie met appelgebak</span><span class="chip">buffetten &amp; feestavonden</span>
-        <span class="chip">cafetaria voor friet &amp; snacks</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- omgeving -->
-<section class="omgeving" id="omgeving">
-  <div class="band">
-    <img src="assets/heide.jpg" alt="Fietsen over de Rucphense heide" loading="lazy" width="1600" height="893">
-    <div class="inhoud">
-      <div class="eyebrow scrl" style="color:var(--lime)"><svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>Midden in de natuur, alles dichtbij</div>
-      <h2 class="scrl">Je vertrekt gewoon vanaf de camping</h2>
-      <p class="scrl">Stuifduinen, dennenbos en heide: de Rucphense bossen lopen door tot in België. Via het knooppuntensysteem bepaal je zelf je afstand — en voor dagjes uit zit je hier verrassend centraal.</p>
-      <div class="uitjes scrl">
-        <span class="uitje">Efteling <em>±30 min</em></span>
-        <span class="uitje">Beekse Bergen <em>±30 min</em></span>
-        <span class="uitje">Waterspeelpark Splesj <em>±10 min</em></span>
-        <span class="uitje">Skidôme Rucphen <em>±5 min</em></span>
-        <span class="uitje">Breda <em>±20 min</em></span>
-        <span class="uitje">Bloemencorso Zundert <em>sep</em></span>
-      </div>
-      <div class="route scrl"><a class="btn ghost" href="https://maps.google.com/?q=Camping+de+Posthoorn,+Pierestraat+16,+Rucphen" target="_blank" rel="noopener">Plan je route</a></div>
-    </div>
-  </div>
-</section>
-
-<!-- reviews -->
-<section class="reviews wrap" id="reviews">
-  <div class="kop scrl" style="text-align:center;margin-inline:auto">
-    <div class="eyebrow" style="justify-content:center"><svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>Wat gasten zeggen</div>
-    <h2 style="margin-inline:auto">Rust, ruimte en vriendelijke ontvangst</h2>
-  </div>
-  <div class="rev-grid">
-    <div class="rev scrl"><p>Heerlijk rustige camping aan de bosrand. Ruime plek, schoon en verwarmd sanitair en een fijn zwembad voor de kinderen. Wij komen terug.</p><footer><b>Familie van Dijk</b> · kampeerplaats · juli</footer></div>
-    <div class="rev scrl"><p>De camping-suite was een verrassing: echt een hotelkamer, met ligbad en een groot terras. 's Ochtends wandel je zo het bos in.</p><footer><b>Anja &amp; Peter</b> · camping-suite · mei</footer></div>
-    <div class="rev scrl"><p>Met de fiets langs de knooppunten en 's avonds een knusse trekkershut. Vriendelijke ontvangst en alles netjes voor elkaar.</p><footer><b>Mark</b> · trekkershut · september</footer></div>
-  </div>
-  <p class="rev-noot scrl">Beoordelingen van gasten van Camping de Posthoorn. Zelf bij ons verbleven? We horen graag wat je ervan vond.</p>
-</section>
-
-<!-- te koop -->
-<section class="tekoop" id="tekoop">
-  <div class="wrap grid2">
-    <div class="fotos scrl">
-      <img src="assets/occasion-1.jpg" alt="Chalet te koop op Camping de Posthoorn" loading="lazy" width="1200" height="900">
-      <img src="assets/occasion-2.jpg" alt="Chalet met terras te koop" loading="lazy" width="1200" height="900">
-    </div>
-    <div class="scrl">
-      <div class="eyebrow"><svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>Een eigen plekje aan de bossen?</div>
-      <h2>Chalets te koop op het park</h2>
-      <p style="margin-top:12px;color:var(--muted)">Droom je van een vast vakantieadres in de natuur? Vaste staanplaatsen van 110 tot 300 m², met elektra, water- en rioolaansluiting en gratis wifi. Open van 15 maart t/m 31 oktober.</p>
-      <div class="occasions">
-        <a class="occ" href="chalet-hollandia.html"><b>Chalet Hollandia</b><span>2 slaapkamers · zonnige hoekplaats A49</span><span class="p">€29.950</span></a>
-        <a class="occ" href="chalet-bk-carnival.html"><b>BK Bluebird Carnival</b><span>3 slaapkamers · direct beschikbaar</span><span class="p">€18.950</span></a>
-        <a class="occ" href="chalet-d24.html"><b>Luifel-chalet op D24</b><span>winterluifel · CV · instapklaar</span><span class="p">€37.950</span></a>
-        <a class="occ" href="chalet-d27.html"><b>Zaro chalet op D27</b><span>nieuw · airco · aan de bosrand</span><span class="p">€39.950</span></a>
-      </div>
-      <a class="btn" href="te-koop.html">Bekijk het aanbod</a>
-      <span style="display:inline-block;margin-left:16px;font-size:.9rem;color:var(--muted)">of bel voor een bezichtiging: <a href="tel:+31165341688" style="font-weight:700;color:var(--bos)">0165 - 341 688</a></span>
-    </div>
-  </div>
-</section>
-
-<!-- faq -->
-<section class="faq" id="faq">
-  <div class="kop scrl" style="text-align:center">
-    <div class="eyebrow" style="justify-content:center;color:var(--paars)"><svg viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8c10 0 18 0 26 0a8 8 0 1 1 0 16c-6 0-9-4-9-8"/><path d="M4 5v6"/><path d="M44 12h2"/></svg>Veelgestelde vragen</div>
-    <h2 style="margin-inline:auto">Goed om te weten</h2>
-  </div>
-  <details class="scrl"><summary>Zijn honden of andere huisdieren toegestaan?<span class="plus">+</span></summary><div class="antw">Nee. Honden worden op ons terrein niet toegelaten, ook niet in de huuraccommodaties. Daardoor is het bij ons extra rustig — iets wat veel gasten juist waarderen.</div></details>
-  <details class="scrl"><summary>Wat zijn de aankomst- en vertrektijden?<span class="plus">+</span></summary><div class="antw">Kampeerplaatsen: inchecken vanaf 13:00 uur, uitchecken vóór 11:00 uur. Camping-suites: inchecken vanaf 15:00 uur, uitchecken vóór 10:00 uur.</div></details>
-  <details class="scrl"><summary>Wanneer is het zwembad open?<span class="plus">+</span></summary><div class="antw">Van 16 mei t/m 1 september, dagelijks van 10:00 tot 20:00 uur. Het bad is verwarmd en gratis voor onze gasten. Voor de allerkleinsten is er een veilig afgescheiden kinderbad van 40 cm diep.</div></details>
-  <details class="scrl"><summary>Wanneer is de camping geopend?<span class="plus">+</span></summary><div class="antw">Toeristisch kamperen kan van 1 april t/m 30 september. Vaste standplaatsen en verhuuraccommodaties zijn open van 15 maart t/m 31 oktober. Telefonisch zijn we het hele jaar bereikbaar, 7 dagen per week van 10:00 tot 20:00 uur.</div></details>
-  <details class="scrl"><summary>Kan ik mijn reservering wijzigen of annuleren?<span class="plus">+</span></summary><div class="antw">Neem in dat geval zo snel mogelijk contact met ons op via 0165 - 341 688 of info@posthoornrucphen.nl — we denken graag met je mee. De voorwaarden ontvang je bij je reserveringsbevestiging.</div></details>
-</section>
-
-<!-- afsluiter / contact -->
-<section class="afsluiter" id="contact">
-  <div class="wrap grid2">
-    <div class="scrl">
-      <h2>Klaar voor het bos?</h2>
-      <p class="sub">Bekijk de beschikbaarheid of bel ons — we helpen je graag aan de juiste plek.</p>
-      <div class="acties">
-        <a class="btn licht" href="#boek">Bekijk beschikbaarheid</a>
-        <a class="btn ghost" href="tel:+31165341688">Bel 0165 - 341 688</a>
-      </div>
-      <p class="micro">Vragen over een plek, accommodatie of de prijslijst 2026? Bel of mail gerust — je krijgt gewoon iemand van de camping aan de lijn.</p>
-    </div>
-    <div class="contact-kaart scrl">
-      <h3>Camping de Posthoorn</h3>
-      <ul>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Pierestraat 16, 4715 RP Rucphen (NB) — A58 afslag 21</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><a href="tel:+31165341688">+31 (0)165 341 688</a>&nbsp;· 7 d/p week, 10:00 – 20:00</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@posthoornrucphen.nl">info@posthoornrucphen.nl</a></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4M16 3v4M4 11h16"/></svg>Kamperen: 1 apr – 30 sep · Vaste plaatsen &amp; verhuur: 15 mrt – 31 okt</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- footer -->
-<footer class="site">
-  <div class="wrap rij">
-    <div class="merk"><img src="assets/logo.png" alt="">de Posthoorn</div>
-    <div>© <span id="jr">2026</span> Camping de Posthoorn · KvK Breda 20104758 · BTW NL 806857353B01 · Tarieven 2026, wijzigingen voorbehouden</div>
-    <div>Concept-preview door <span class="maker">Job Stolwerk</span></div>
-  </div>
-</footer>
-
-<!-- mobiele boekbalk -->
-<div class="mob-balk">
-  <a class="btn tel" href="tel:+31165341688" aria-label="Bel de camping"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></a>
-  <a class="btn" href="#boek">Bekijk beschikbaarheid</a>
-</div>
-
 <script>
-// header: transparant boven hero → solid bij scroll
-const hdr = document.getElementById('hdr');
-const zetHeader = () => hdr.classList.toggle('solid', scrollY > 40);
-addEventListener('scroll', zetHeader, {passive:true}); zetHeader();
-
-// scroll-reveals
-const io = new IntersectionObserver(es => es.forEach(e => {
-  if(e.isIntersecting){ e.target.classList.add('zichtbaar'); io.unobserve(e.target); }
-}), {threshold:.12, rootMargin:'0px 0px -40px 0px'});
-document.querySelectorAll('.scrl').forEach(el => io.observe(el));
-
-// boekwidget: standaard aanstaande vrijdag + 3 nachten, door naar online reserveren
-const aank = document.getElementById('aankomst'), vert = document.getElementById('vertrek');
-const d = new Date(); d.setDate(d.getDate() + ((5 - d.getDay() + 7) % 7 || 7));
-const v = new Date(d); v.setDate(v.getDate() + 3);
-const iso = x => x.toISOString().slice(0,10);
-aank.value = iso(d); vert.value = iso(v);
-aank.min = iso(new Date());
-aank.addEventListener('change', () => { vert.min = aank.value; if(vert.value <= aank.value){ const n = new Date(aank.value); n.setDate(n.getDate()+3); vert.value = iso(n);} });
-document.getElementById('boekform').addEventListener('submit', e => {
-  e.preventDefault();
-  // → CatBooking, het bestaande online-reserveringssysteem van de camping
-  window.open('https://public.catbooking.nl/OnlineBooking/Search/Search.aspx?relation=xtGb%2f72RFss%3d&languageid=1&locationid=0&searchmode=1','_blank');
+const DATA={"s":"S96SrvOF3bWqYXVg0tFjQQ==","i":"HPXLdyTWNp82R/83","c":"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","n":250000};
+const KEY="site-gate-pw";
+const dec=s=>{const b=atob(s),u=new Uint8Array(b.length);for(let i=0;i<b.length;i++)u[i]=b.charCodeAt(i);return u;};
+async function unlock(pw){
+  const km=await crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveKey"]);
+  const key=await crypto.subtle.deriveKey({name:"PBKDF2",salt:dec(DATA.s),iterations:DATA.n,hash:"SHA-256"},km,{name:"AES-GCM",length:256},false,["decrypt"]);
+  const pt=await crypto.subtle.decrypt({name:"AES-GCM",iv:dec(DATA.i)},key,dec(DATA.c));
+  return new TextDecoder().decode(pt);
+}
+async function tryShow(pw){
+  const html=await unlock(pw);
+  document.open();document.write(html);document.close();
+}
+const saved=sessionStorage.getItem(KEY);
+if(saved){tryShow(saved).catch(()=>sessionStorage.removeItem(KEY));}
+const f=document.getElementById("f"),pw=document.getElementById("pw"),err=document.getElementById("err"),btn=document.getElementById("btn");
+f.addEventListener("submit",async e=>{
+  e.preventDefault();err.classList.remove("show");btn.disabled=true;btn.textContent="Bezig…";
+  try{
+    await tryShow(pw.value.trim());
+    sessionStorage.setItem(KEY,pw.value.trim());
+  }catch(_){
+    err.textContent="Dat wachtwoord klopt niet.";err.classList.add("show");
+    btn.disabled=false;btn.textContent="Openen";pw.value="";pw.focus();
+  }
 });
-
-document.getElementById('jr').textContent = new Date().getFullYear();
-
-// na de intro-animatie de reveal-klassen opruimen, zodat de geladen webfont
-// gegarandeerd hertekend wordt (composited layers blijven anders soms hangen)
-addEventListener('load', () => setTimeout(() => {
-  document.querySelectorAll('.reveal').forEach(el => el.classList.remove('reveal','d1','d2','d3','d4'));
-}, 1700));
 </script>
 </body>
 </html>
